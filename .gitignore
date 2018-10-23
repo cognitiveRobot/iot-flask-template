@@ -8,6 +8,7 @@ database.py
 static
 static/
 test_page.html
+app_with_db_class.py
 
 # Database file
 *.sql
