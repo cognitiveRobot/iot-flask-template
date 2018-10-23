@@ -1,0 +1,15 @@
+#Environment
+
+venv
+venv/
+v-think-again
+v-think-again/
+venv*
+__pycache__/
+database.py
+static
+static/
+test_page.html
+
+# Database file
+*.sql

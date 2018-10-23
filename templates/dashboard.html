@@ -1,0 +1,27 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome to Dashboard</h1>
+    <h2>List of the Devices</h2>
+    <!-- {% for device in devices %}
+      <a href="device/{{device.status}}"></a>
+    {% endfor %} -->
+
+    {% for device in devices %}
+      <li class="list-group-item">
+
+            <div class="alert alert-info" >{{device.name}} is {{device.status}}.</div>
+           {% if device['status'] == 'off' %}
+
+           <button type="button" class="btn btn-info unlocked_inactive">OFF</button>
+    	     <a class="btn btn-default locked_active" href="device/{{device.id}}/on">ON</a>
+           {% else %}
+
+           <a class="btn btn-default locked_active" href="device/{{device.id}}/off">OFF</a>
+    	     <button type="button" class="btn btn-info unlocked_inactive">ON</button>
+           {% endif %}
+      </li>
+
+    {% endfor %}
+{% endblock %}
