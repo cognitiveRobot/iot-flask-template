@@ -1,10 +1,8 @@
 #Environment
 
-venv
-venv/
-v-think-again
-v-think-again/
-venv*
+v-iot
+v-iot/
+v-iot*
 __pycache__/
 database.py
 static
