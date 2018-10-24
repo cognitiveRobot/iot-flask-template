@@ -21,7 +21,7 @@ Your IDE
 
 The final file structure for the .
 ```
-iot-flask-app
+iot-flask-template
 ├── app.py
 ├── database.py
 ├── devices.py
@@ -49,23 +49,27 @@ $ cd <path-to-the-folder>
 ```
 $ git clone git@github.com:cognitiveRobot/iot-flask-template.git
 ```
-3. Create a Virtual Environment
+3. Go inside the cloned folder.
+```
+$ cd iot-flask-template
+```
+4. Create a Virtual Environment
 ```
 $ python3 -m venv v-iot
 ```
-4. Activate the Virtual Environment
+5. Activate the Virtual Environment
 ```
 $ souce v-iot/bin/activate
 ```
-5. Upgrade the pip
+6. Upgrade the pip
 ```
 $ pip install --upgrade pip
 ```
-6. Install all python packages
+7. Install all python packages
 ```
 $ pip install -r requirments.txt
 ```
-7. If everything goes well up to now, then you would be able to quickly run the app.
+8. If everything goes well up to now, then you would be able to quickly run the app.
 ```
 $ python app.py
 ```
