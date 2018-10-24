@@ -125,9 +125,9 @@ Comming soon.
 
 ## Built With
 
-* [Python](http://www.dropwizard.io/1.0.2/docs/) - For Server Side Program
-* [Flask](https://maven.apache.org/) - For Webapp Framework
-* [MySQL](https://rometools.github.io/rome/) - For Database
+* [Python](https://www.python.org/) - For Server Side Program
+* [Flask](http://flask.pocoo.org/) - For Webapp Framework
+* [MySQL](https://www.mysql.com/) - For Database
 * [Materialize](https://materializecss.com) - For Front End
 
 ## Contributing
@@ -149,5 +149,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Brad Traversy](https://github.com/bradtraversy/myflaskapp) - For the initial code.
+* [Brad Traversy](https://github.com/bradtraversy/) - For the initial code.
 * [Billie Thompson](https://gist.github.com/PurpleBooth) - For the this readme file template.
