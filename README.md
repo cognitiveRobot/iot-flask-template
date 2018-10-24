@@ -1,6 +1,6 @@
-# flask-app-template
+# iot-flask-template
 
-Template to build an Internet of Things application using Flask and MySQL.
+A simple and lightwight template to build an Internet of Things (IoT) application using Flask and MySQL. It also can be used to build a live RESTful API to deploy on raspberry pi.
 
 ## Getting Started
 
@@ -19,7 +19,27 @@ Your IDE
 
 ### Installing
 
-Follow the steps below to get a development env up and running in a ubuntu(linux)
+The final file structure for the .
+```
+iot-flask-app
+├── app.py
+├── database.py
+├── devices.py
+├── README.md
+├── requirments.txt
+├── templates
+│   ├── about.html
+│   ├── dashboard.html
+│   ├── home.html
+│   ├── includes
+│   │   ├── _formhelpers.html
+│   │   ├── _messages.html
+│   │   └── _navbar.html
+│   ├── layout.html
+│   ├── login.html
+│   └── register.html
+```
+Follow the steps below to get a development env up and running in a ubuntu(linux).
 
 1. Go to your main project folder.
 ```
@@ -113,12 +133,12 @@ Make the pull request.
 
 ## Versioning
 
-See the [See the tags](https://github.com/cognitiveRobot/iot-flask-template/commits/master)
+For now please [See the tags](https://github.com/cognitiveRobot/iot-flask-template/commits/master)
 
 ## Authors
 
 * **Zulfikar Hossain** - *Initial work* - [CognitiveRobot](https://github.com/CognitiveRobot)
-
+* **Maybe you**
 
 ## License
 

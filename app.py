@@ -137,6 +137,8 @@ def logout():
 @is_logged_in
 def dashboard():
     print("Dashboard")
+    # Retriving data from database will go here
+    # First will have to get the data from the database and then send to the view
     return render_template('dashboard.html', devices=devices)
 
 # Device Control Route
