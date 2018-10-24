@@ -106,7 +106,7 @@ def dbusers():
             'cursor':'DictCursor'
     }
     return db_users
-    ```
+```
 
 ## Running the tests
 
@@ -119,7 +119,6 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
 ## Deployment
 
 Comming soon.
