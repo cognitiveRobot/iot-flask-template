@@ -14,33 +14,38 @@ What things you need to install the software and how to install them
 Python
 Virtual Environment
 MySQL
+Your IDE
 ```
 
 ### Installing
 
 Follow the steps below to get a development env up and running in a ubuntu(linux)
 
-1. Go to your project folder
+1. Go to your main project folder.
 ```
-$ cd <path-to-the-folder>/iot-flask-template
+$ cd <path-to-the-folder>
 ```
-2. Create a Virtual Environment
+2. git clone the repository.
+```
+$ git clone git@github.com:cognitiveRobot/iot-flask-template.git
+```
+3. Create a Virtual Environment
 ```
 $ python3 -m venv v-iot
 ```
-3. Activate the Virtual Environment
+4. Activate the Virtual Environment
 ```
 $ souce v-iot/bin/activate
 ```
-4. Upgrade the pip
+5. Upgrade the pip
 ```
 $ pip install --upgrade pip
 ```
-5. Install all python packages
+6. Install all python packages
 ```
 $ pip install -r requirments.txt
 ```
-If everything goes well up to now, then you would be able to quickly run the app.
+7. If everything goes well up to now, then you would be able to quickly run the app.
 ```
 $ python app.py
 ```
@@ -48,7 +53,36 @@ If all good so far, then follow next to know how to integrate the database for t
 
 ## Intregating the MySQL Database
 
-End with an example of getting some data out of the system or using it for a little demo
+Considering you have installed MySQL in your system. Follow the steps below to integrate a MySQL database to store user details.
+
+1. Create a table named users in your database as follows.
+
+  ```
+mysql> describe users;
++---------------+--------------+------+-----+-------------------+----------------+
+| Field         | Type         | Null | Key | Default           | Extra          |
++---------------+--------------+------+-----+-------------------+----------------+
+| id            | int(11)      | NO   | PRI | NULL              | auto_increment |
+| name          | varchar(100) | YES  |     | NULL              |                |
+| email         | varchar(100) | YES  |     | NULL              |                |
+| username      | varchar(30)  | YES  |     | NULL              |                |
+| password      | varchar(100) | YES  |     | NULL              |                |
+| register_date | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
++---------------+--------------+------+-----+-------------------+----------------+
+  ```
+2. Create database.py file in the project root director (i.e. app.py and database.py will sit in the same folder) and save the following content.
+```
+def dbusers():
+    db_users = {
+            'id':1,
+            'user':'<ur_mysql_username>',
+            'password':'<ur_username's_password>',
+            'db':'<your_database>',
+            'host':'localhost',
+            'cursor':'DictCursor'
+    }
+    return db_users
+    ```
 
 ## Running the tests
 
@@ -64,21 +98,22 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Comming soon.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](http://www.dropwizard.io/1.0.2/docs/) - For Server Side Program
+* [Flask](https://maven.apache.org/) - For Webapp Framework
+* [MySQL](https://rometools.github.io/rome/) - For Database
+* [Materialize](https://materializecss.com) - For Front End
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Make the pull request.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+See the [See the tags](https://github.com/cognitiveRobot/iot-flask-template/commits/master)
 
 ## Authors
 
@@ -91,4 +126,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Brad Traversy](https://github.com/bradtraversy/myflaskapp)
+* [Brad Traversy](https://github.com/bradtraversy/myflaskapp) - For the initial code.
+* [Billie Thompson](https://gist.github.com/PurpleBooth) - For the this readme file template.
