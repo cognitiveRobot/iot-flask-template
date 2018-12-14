@@ -16,6 +16,11 @@ Virtual Environment
 MySQL
 Your IDE
 ```
+### Resources
+Check the followings to learn basic concepts about:
+* Flask - [webpage](http://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html#zz-4.)
+* Materialize - [video](https://www.youtube.com/watch?v=gCZ3y6mQpW0&list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff)
+
 
 ### Installing
 
